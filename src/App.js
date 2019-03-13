@@ -7,9 +7,8 @@ class App extends Component {
     return (
       <div className='App'>
         <Nav />
-        <header className='App-header'>
-          <p>STDate</p>
-        </header>
+        <h1>STDate</h1>
+        <button className='button'>bruh</button>
       </div>
     );
   }

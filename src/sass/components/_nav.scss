@@ -2,10 +2,14 @@
   &__list {
     display: flex;
     flex-direction: row;
+    justify-content: flex-end;
     list-style: none;
+    font-size: 1.5rem;
+    border-bottom: 2px solid gray;
+    padding-bottom: 1rem;
 
     &--item {
-      color: red;
+      margin-right: 2rem;
     }
   }
 }
