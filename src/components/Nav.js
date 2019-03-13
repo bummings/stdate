@@ -4,10 +4,10 @@ class Nav extends Component {
   render() {
     return (
       <div className='nav'>
-        <ul>
-          <li>1</li>
-          <li>2</li>
-          <li>3</li>
+        <ul className='nav__list'>
+          <li className='nav__list--item'>1</li>
+          <li className='nav__list--item'>2</li>
+          <li className='nav__list--item'>3</li>
         </ul>
       </div>
     );
