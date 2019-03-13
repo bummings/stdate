@@ -9,12 +9,10 @@ class App extends Component {
   render() {
     return (
       <div className='App'>
-        <Route exact path='/' component={LandingPage} />
-
-        <Route path='/signup' component={SignUp} />
-
         <Nav />
-        <LandingPage />
+
+        <Route exact path='/' component={LandingPage} />
+        <Route path='/signup' component={SignUp} />
       </div>
     );
   }
