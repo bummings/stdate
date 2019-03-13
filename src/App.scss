@@ -1,14 +1,5 @@
+@import './sass/components/_nav.scss';
+
 .App {
   text-align: center;
-}
-
-.nav {
-  &__list {
-    display: flex;
-    flex-direction: row;
-    list-style: none;
-    &--item {
-      color: red;
-    }
-  }
 }
