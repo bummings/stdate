@@ -1,0 +1,15 @@
+.landing {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #a55;
+  padding: 10rem 10rem;
+
+  &__headline {
+    font-size: 5rem;
+  }
+
+  &__text {
+    font-size: 1.5rem;
+  }
+}
