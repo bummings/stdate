@@ -7,6 +7,14 @@ class LandingPage extends Component {
         <h1 className='landing__headline'>STDate</h1>
         <p className='landing__text'>It's free and easy to start</p>
         <button className='button'>Get started</button>
+
+        <div className='landing__form--gender'>
+          <p className='landing__form--gender--text'>I am a </p>
+          <select name='gender' className='formInput'>
+            <option>Male</option>
+            <option>Female</option>
+          </select>
+        </div>
       </div>
     );
   }
