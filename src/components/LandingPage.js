@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import LookingForForm from '../components/LookingForForm';
 
 class LandingPage extends Component {
   render() {
@@ -8,20 +9,7 @@ class LandingPage extends Component {
         <p className='landing__text'>It's free and easy to start</p>
         <button className='button'>Get started</button>
 
-        <div className='landing__form--gender'>
-          <p className='landing__form--gender--text'>I am a </p>
-          <select name='gender' className='formInput'>
-            <option>Male</option>
-            <option>Female</option>
-          </select>
-        </div>
-        <div className='landing__form--gender'>
-          <p className='landing__form--gender--text'>seeking a </p>
-          <select name='genderChoice' className='formInput'>
-            <option>Male</option>
-            <option>Female</option>
-          </select>
-        </div>
+        <LookingForForm />
       </div>
     );
   }
