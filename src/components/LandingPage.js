@@ -15,6 +15,13 @@ class LandingPage extends Component {
             <option>Female</option>
           </select>
         </div>
+        <div className='landing__form--gender'>
+          <p className='landing__form--gender--text'>seeking a </p>
+          <select name='genderChoice' className='formInput'>
+            <option>Male</option>
+            <option>Female</option>
+          </select>
+        </div>
       </div>
     );
   }
