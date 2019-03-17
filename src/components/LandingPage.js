@@ -6,14 +6,16 @@ class LandingPage extends Component {
     return (
       <div className='landing'>
         <div className='landing__text'>
-          <p className='landing__headline'>
+          <p className='landing__text--headline'>
             Join our community of 20,000 singles
           </p>
-          <p className='landing__headline'>It's free & confidental</p>
+          <p className='landing__text--headline'>It's free & confidental</p>
           <button className='button'>Get started</button>
         </div>
 
-        <LookingForForm />
+        <div>
+          <LookingForForm />
+        </div>
       </div>
     );
   }
