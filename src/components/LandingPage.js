@@ -5,8 +5,10 @@ class LandingPage extends Component {
   render() {
     return (
       <div className='landing'>
-        <h1 className='landing__headline'>STDate</h1>
-        <p className='landing__text'>It's free and easy to start</p>
+        <p className='landing__headline'>
+          Join our community of 20,000 singles
+        </p>
+        <p className='landing__headline'>It's free & confidental</p>
         <button className='button'>Get started</button>
 
         <LookingForForm />
@@ -14,5 +16,4 @@ class LandingPage extends Component {
     );
   }
 }
-
 export default LandingPage;
