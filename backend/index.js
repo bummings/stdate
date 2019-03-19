@@ -1,10 +1,11 @@
+const port = 5000;
 const express = require('express');
 const knex = require('knex');
-const knexConfig = require('../knexfile');
+const knexConfig = require('./knexfile.js');
 const db = knex(knexConfig.development);
 
 const server = express();
-const port = 5000;
+server.use(express.json());
 
 server.get('/', (req, res) => {
   res.send('bruhhhhhhhh');
@@ -25,13 +26,13 @@ server.get('/users', (req, res) => {
   res.status(200).json(users);
 });
 
-server.post('/users/', (req, res) => {
+server.post('/users', (req, res) => {
   const user = req.body;
 
   db.insert(user)
     .into('users')
-    .then(ids => {
-      res.status(201).json(ids);
+    .then(id => {
+      res.status(201).json(id);
     })
     .catch(err => {
       res.status(500).json(err);
