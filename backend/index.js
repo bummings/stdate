@@ -40,5 +40,5 @@ server.post('/users', (req, res) => {
 });
 
 server.listen(5000, () => {
-  console.log(`SERVER IS RUNNIN ON ${port}`);
+  console.log(`SERVER BE RUNNIN ON ${port}`);
 });
