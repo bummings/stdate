@@ -1,3 +1,9 @@
+.landing {
+  display: flex;
+  flex-direction: column;
+  border: 2px solid red;
+}
+
 .formInput {
   font-size: 2rem;
   margin-left: 2rem;
