@@ -3,8 +3,10 @@
   justify-content: center;
   align-items: center;
   background-color: $color-primary;
-  width: 10rem;
-  height: 4rem;
+  font-size: 1.8rem;
+  overflow: auto;
+  width: 12rem;
+  height: 5rem;
   border-radius: 10px;
   border: 2px solid;
 }
