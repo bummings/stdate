@@ -7,7 +7,7 @@ exports.up = function(knex, Promise) {
     user.integer('age').notNullable();
     user.string('sex').notNullable();
     user.string('city').notNullable();
-    user.integer('areaCode').notNullable();
+    user.integer('zipCode').notNullable();
     user.string('bio');
   });
 };

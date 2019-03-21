@@ -12,19 +12,25 @@ server.get('/', (req, res) => {
 });
 
 server.get('/users', (req, res) => {
-  const users = [
-    {
-      id: 1,
-      name: 'faux'
-    },
-    {
-      id: 2,
-      name: 'graf'
-    }
-  ];
-
-  res.status(200).json(users);
+  db('users')
+    .then(user => res.status(200).json(user))
+    .catch(err => res.status(500).json(err));
 });
+
+// server.get('/users', (req, res) => {
+//   const users = [
+//     {
+//       id: 1,
+//       name: 'faux'
+//     },
+//     {
+//       id: 2,
+//       name: 'graf'
+//     }
+//   ];
+
+//   res.status(200).json(users);
+// });
 
 server.post('/users', (req, res) => {
   const user = req.body;
