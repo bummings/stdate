@@ -1,8 +1,11 @@
 const port = 5000;
 const express = require('express');
+const graphqlHTTP = require('express-graphql');
 
 const server = express();
 server.use(express.json());
+
+server.use('/graphql', graphqlHTTP({}));
 
 const userRouter = require('./users/userRouter');
 
