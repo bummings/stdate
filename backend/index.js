@@ -5,6 +5,7 @@ const graphqlHTTP = require('express-graphql');
 const server = express();
 server.use(express.json());
 
+// keep yr REST API routes up in the meantime, tho
 server.use('/graphql', graphqlHTTP({}));
 
 const userRouter = require('./users/userRouter');
