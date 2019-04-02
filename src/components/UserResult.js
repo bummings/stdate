@@ -5,7 +5,7 @@ class UserResult extends Component {
     super(props);
 
     this.state = {
-      name: 'bruh'
+      name: 'cuz'
     };
   }
 

@@ -5,6 +5,7 @@ import Nav from './components/Nav';
 import LandingPage from './components/LandingPage';
 import SignUp from './components/SignUp';
 import Login from './components/Login';
+import UserResult from './components/UserResult';
 
 class App extends Component {
   render() {
@@ -15,6 +16,7 @@ class App extends Component {
         <Route exact path='/' component={LandingPage} />
         <Route path='/signup' component={SignUp} />
         <Route path='/login' component={Login} />
+        <Route path='/user' component={UserResult} />
       </div>
     );
   }
