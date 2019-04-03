@@ -4,8 +4,8 @@ import Axios from 'axios';
 const id = 1;
 
 class UserResult extends Component {
-  constructor(props) {
-    super(props);
+  constructor() {
+    super();
 
     this.state = {
       user: [],
@@ -14,8 +14,8 @@ class UserResult extends Component {
   }
 
   componentDidMount() {
-    // const { id } = this.props.match.params;
-    Axios.get(`http://localhost:5000/users/1`)
+    Axios.get(`http://localhost:5000/users/${id}`)
+      // .then(console.log(res))
       .then(res => this.setState({ user: res.data.result }))
       .then(console.log(this.state.user))
       .catch(err => console.log(err));
